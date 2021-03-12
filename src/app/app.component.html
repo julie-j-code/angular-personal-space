@@ -1,14 +1,17 @@
 <button mat-button [matMenuTriggerFor]="loginMenu">Connexion</button>
 <mat-menu #loginMenu="matMenu" yPosition="above">
   <button mat-menu-item (click)="navigateTo('login')">login</button>
-  <button mat-menu-item>logout à venir</button>
 </mat-menu>
 
 <button mat-button [matMenuTriggerFor]="contactMenu">Contact</button>
 <mat-menu #contactMenu="matMenu" yPosition="above">
   <button mat-menu-item (click)="navigateTo('contact')">Nous contacter</button>
   <button mat-menu-item (click)="navigateTo('location')">Nos coordonnées</button>
-  <button mat-menu-item>logout à venir</button>
+</mat-menu>
+
+<button mat-button [matMenuTriggerFor]="albumMenu">Album</button>
+<mat-menu #albumMenu="matMenu" yPosition="above">
+  <button mat-menu-item (click)="navigateTo('album')">Photos</button>
 </mat-menu>
 
 <router-outlet></router-outlet>

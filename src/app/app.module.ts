@@ -4,6 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { FormsModule } from "@angular/forms";
 
 // firebase
 // import firebase from "firebase";
@@ -14,10 +15,12 @@ import { environment } from "../environments/environment";
 // angular material
 import {MatMenuModule} from '@angular/material/menu';
 import {MatButtonModule} from '@angular/material/button';
+import {MatCardModule} from '@angular/material/card';
 import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
 import { ContactComponent } from './contact/contact.component';
 import { LocationComponent } from './location/location.component';
+import { PhotosAlbumComponent } from './photos-album/photos-album.component';
 
 
 @NgModule({
@@ -26,16 +29,19 @@ import { LocationComponent } from './location/location.component';
     HomeComponent,
     LoginComponent,
     ContactComponent,
-    LocationComponent
+    LocationComponent,
+    PhotosAlbumComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+    FormsModule,
     AngularFireAuthModule,
     AngularFireModule.initializeApp(environment),
     MatMenuModule,
-    MatButtonModule
+    MatButtonModule,
+    MatCardModule
 
   ],
   providers: [],

@@ -1,0 +1,7 @@
+<p>photos-album works!</p>
+<form #uploadForm="ngForm" (ngSubmit)="postPhoto()">
+  <input type="file" name="uploadFile" id="uploadFile"(change)="onFileChange($event)" required >
+  <br>
+  <input type="text" name="title" id="title" ([NgModel])="photo.title" placeholder="titre de la photo">
+  <button type="submit" [disabled]="!uploadForm.form.valid">Uploader</button>
+</form>

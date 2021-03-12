@@ -1,7 +1,12 @@
 <br>
 <div *ngIf="!user">
+
   <button mat-button color="accent" (click)="loginWithGoogle()">Se connecter avec google</button>
 </div>
 <div *ngIf="user">
+  <mat-card>
+    <mat-card-content>Bonjour {{ user.displayName }}</mat-card-content>
+  </mat-card>
+
   <button mat-raised-button color="warn" (click)="signOut()">Se déconnecter</button>
 </div>
