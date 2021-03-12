@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-// import de Router pour implémenter nos routage
+// import de Router pour implémenter le routage
 import { Router } from "@angular/router";
 
 @Component({

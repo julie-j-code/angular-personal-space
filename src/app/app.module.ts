@@ -5,6 +5,11 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
+// firebase
+import { AngularFireModule } from "@angular/fire";
+import { AngularFireAuthModule } from "@angular/fire/auth";
+import { environment } from "../environments/environment";
+
 // angular material
 import {MatMenuModule} from '@angular/material/menu';
 import {MatButtonModule} from '@angular/material/button';
@@ -26,8 +31,11 @@ import { LocationComponent } from './location/location.component';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+    AngularFireAuthModule,
+    AngularFireModule.initializeApp(environment),
     MatMenuModule,
     MatButtonModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -24,6 +24,22 @@ import {MatButtonModule} from '@angular/material/button';
 npm install firebase
 ng add @angular/fire (après avoir crée le projet sur firebase !)
 
+## Further information 
+
+les variables d'environnement  ont été ajoutées directement dans export const environment du fichier environnement.ts crée à l'initiation du projet
+
+d'où la succession des imports pour firebase
+// firebase
+
+``
+import { AngularFireModule } from "@angular/fire";
+import { AngularFireAuthModule } from "@angular/fire/auth";
+import { environment } from "../environments/environment";
+``
+
+et l'import dans le tableau des imports de app-module.ts
+`AngularFireModule.initializeApp(environment),`
+
 
 ## Further help
 
