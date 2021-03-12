@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "ng-personal-space-a1753": {
+      "hosting": {
+        "ng-personal-space": [
+          "ng-personal-space-a1753"
+        ]
+      }
+    }
+  }
+}

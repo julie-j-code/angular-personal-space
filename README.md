@@ -19,6 +19,11 @@ Run `ng build` to build the project. The build artifacts will be stored in the `
 import {MatMenuModule} from '@angular/material/menu';
 import {MatButtonModule} from '@angular/material/button';
 
+# Additional Installations 
+
+npm install firebase
+ng add @angular/fire (après avoir crée le projet sur firebase !)
+
 
 ## Further help
 
