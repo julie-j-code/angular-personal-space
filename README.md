@@ -40,6 +40,15 @@ import { environment } from "../environments/environment";
 et l'import dans le tableau des imports de app-module.ts
 `AngularFireModule.initializeApp(environment),`
 
+pour rendre accessible AngularFireStorage 
+dans app-module :
+import { AngularFireStorageModule } from '@angular/fire/storage';
+dans photos-album-component
+import { AngularFireStorage } from '@angular/fire/storage';
+
+## Memo
+pour générer l'interface :
+ng g interface models/personal-space
 
 ## Further help
 
