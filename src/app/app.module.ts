@@ -7,10 +7,11 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule } from "@angular/forms";
 
 // firebase
-// import firebase from "firebase";
 import { AngularFireModule } from "@angular/fire";
 import { AngularFireAuthModule } from "@angular/fire/auth";
 import { environment } from "../environments/environment";
+import { AngularFireStorageModule } from '@angular/fire/storage';
+
 
 // angular material
 import {MatMenuModule} from '@angular/material/menu';
@@ -39,6 +40,7 @@ import { PhotosAlbumComponent } from './photos-album/photos-album.component';
     FormsModule,
     AngularFireAuthModule,
     AngularFireModule.initializeApp(environment),
+    AngularFireStorageModule,
     MatMenuModule,
     MatButtonModule,
     MatCardModule
