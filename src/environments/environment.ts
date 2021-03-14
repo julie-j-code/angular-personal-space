@@ -4,12 +4,13 @@
 
 export const environment = {
   production: false,
-  apiKey: "AIzaSyCks3E9SQzOHxQYIAravfhxEtIEhges1ic",
-  authDomain: "ng-personal-space-a1753.firebaseapp.com",
-  projectId: "ng-personal-space-a1753",
-  storageBucket: "ng-personal-space-a1753.appspot.com",
-  messagingSenderId: "928566357420",
-  appId: "1:928566357420:web:9519e53216434a162d5e09"
+  apiKey: "AIzaSyBu1NBWkObWg2BNqMlHhJ9sXYadZt61K_w",
+  authDomain: "ng10-personal-space-732ae.firebaseapp.com",
+  databaseURL: "https://ng10-personal-space-732ae-default-rtdb.europe-west1.firebasedatabase.app",
+  projectId: "ng10-personal-space-732ae",
+  storageBucket: "ng10-personal-space-732ae.appspot.com",
+  messagingSenderId: "114191608489",
+  appId: "1:114191608489:web:af26df3aa1c5360c2897b8"
 
 };
 

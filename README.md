@@ -49,6 +49,8 @@ import { AngularFireStorage } from '@angular/fire/storage';
 ## Memo
 pour générer l'interface :
 ng g interface models/personal-space
+pour notamment mettre à jour (si l'upload s'est effectuée avec succès) le tableau des urls qui figure dans notre collection
+ng g service services/db
 
 ## Further help
 

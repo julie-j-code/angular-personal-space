@@ -36,13 +36,13 @@ export class DbService {
     return this.personalSpaces;
   }
 
-  readPersonalSpaceByUID(uid: any) {
+  readPersonalSpaceByUID(uid: string) {
     return this.afs
       .collection(this.collectionName, (ref) => ref.where('uid', '==', uid))
       .valueChanges({ idField: 'id' });
   }
 
-  updatePersonalSpacePhotoURLs(user:any, photoURL:string[]) {
+  updatePersonalSpacePhotoURLs(user:any, photoURL:any) {
     return this.afs
       .collection(this.collectionName)
       .doc(`ps-${user.uid}`)
