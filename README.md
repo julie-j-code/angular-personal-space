@@ -52,6 +52,12 @@ ng g interface models/personal-space
 pour notamment mettre à jour (si l'upload s'est effectuée avec succès) le tableau des urls qui figure dans notre collection
 ng g service services/db
 
+## Memo pour déployer
+
+firebase init
+firebase deploy 
+en prenant garde à ne pas laisser le chemin par défaut à public mais renseigner dist/le-nom-de-votre-projet
+
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
